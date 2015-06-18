@@ -5,6 +5,10 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
 <style type="text/css">
 #page2 div p {
 	font-size: 9px;
@@ -135,8 +139,18 @@
 }
 </style>
 
+<script>
+$(document).on("pagecreate","#page8",function(){
+  $("p").on("swipe",function(){
+    $("span").text("PALACIO DE HIERRO Blvd. del Niño Poblan No. 2510 Col. Concepción de la Cruz.Puebla, Puebla Lunes a Domingo: 11:00 am a 21:00 hrs. El Punto de Venta NO entrega ordenes WILLCALL/OXXO/ELEKTRA------------MISTERTENNIS Centro 2pte #114 Col. Centro.Puebla, Puebla. Horario de 10:00 am a 8:00 pm de Lunes a Domingo-------------MISTERTENNIS DORADA Boulevard 5 de mayo 3510 local 28 Int Plaza Dorada.Ladrillera de Benitez, Puebla. Horario de 11:00 am a 8:00 pm de Lunes a Domingo.");
+  });                       
+});
+</script>
+
 </head> 
 <body> 
+
+
 
 
 <div data-role="page" id="page">
@@ -148,6 +162,7 @@
 			<li><a href="#page2" data-transition="fade">HISTORIA</a></li>
             <li><a href="#page3" data-transition="flip">ESCUDO</a></li>
 			<li><a href="#page4" data-transition="pop">ESTADIO</a></li>
+          <li><a href="#page8" data-transition="slide">VENTA BOLETOS</a></li>
             <li><a href="#page5" data-transition="slide">PLANTILLA</a></li>
             <li><a href="#AYUDA" data-transition="slidedown">AYUDA</a></li>
 		</ul>		
@@ -158,6 +173,8 @@
 	  <h4>Puebla FC</h4>
 	</div>
 </div>
+
+
 
 
 
@@ -193,6 +210,8 @@
     
     
     
+    
+    
 	
 
 <div data-role="page" id="page3">
@@ -209,6 +228,8 @@
 		<h4>Puebla FC</h4>
 	</div>
 </div>
+
+
 
 
 
@@ -245,6 +266,8 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
 
 
 
+
+
     
 <div data-role="page" id="page5">
 	<div data-role="header">
@@ -266,16 +289,9 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
         		</tr>
         </thead>
      <tbody>
-          
+                
         <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        
-            
-        <tr>
-            <th>Fabian Villaseñor</th>
+            <th>Fabian Villasenor</th>
             <th>01</th>
             <th>Portero</th>
             <th>20/noviembre/1982</th>
@@ -452,12 +468,9 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
         </table>
         
        
-        <a href="#page6" data-role="button" data-theme="a">Fotos de Jugadores </a>
-        
-        
-        <a href="#page" class=" ui-btn">INICIO </a>
-	
-    </div>
+ <a href="#page6" data-role="button" data-theme="a">Fotos de Jugadores </a>
+ <a href="#page" class=" ui-btn">INICIO </a>
+	 </div>
     
 	<div data-role="footer" data-position="fixed">
 		<h4>Puebla FC</h4>
@@ -543,7 +556,9 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
  
  
  
-<div data-role="page7" id="page7">
+ 
+ 
+<div data-role="page" id="page7">
 <div data-role="header">
 	<h1>Buscar Jugadores</h1>
 <a data-direction"reverse" data-rel="back">Atras </a>
@@ -582,6 +597,33 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
     </ul>
   </div>
 </div> 
+
+
+
+
+
+
+<div data-role="page" id="page8">
+  <div data-role="header">
+    <h1>Puntos de Venta</h1>
+    <a data-direction"reverse" data-rel="back">Atras </a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Desliza el dedo sobre el cuadro para saber los puntos de venta de los boletos</p>
+    <p style="border:1px solid black;height:200px;width:200px;"></p>
+    <p><span style="color:blue"> </span></p>
+  </div>
+   <a href="#page" class=" ui-btn">INICIO </a>
+
+  <div data-role="footer" data-position="fixed">
+    <h1>Puebla FC</h1>
+  </div>
+</div> 
+
+
+
+
 
 
 
