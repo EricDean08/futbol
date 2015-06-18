@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
 <style type="text/css">
 #page2 div p {
 	font-size: 9px;
@@ -254,6 +253,7 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
 	</div>
     
 	<div data-role="content"  data-theme="c" >	
+    <a href="#page7" class=" ui-btn">buscar jugador </a>
 		<table data-role="table" data-mode="columntoggle" class="ui-responsive" data-column-btn-text="Seleccion" id="TABLAEMPLE">
        
         <thead>
@@ -540,6 +540,48 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
 	   </div>
 </div>
  
+ 
+ 
+ 
+<div data-role="page7" id="page7">
+<div data-role="header">
+	<h1>Buscar Jugadores</h1>
+<a data-direction"reverse" data-rel="back">Atras </a>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <h2>Jugadores</h2>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="#">Alberto Acosta</a></li>
+      <li><a href="#">Alfonso Tamay</a></li>
+      <li><a href="#">Cuauhtemoc Blanco</a></li>
+      <li><a href="#">Efrain Cortes</a></li>
+      <li><a href="#">Eisner Loboa</a></li>
+      <li><a href="#">Fabian Villaseñor</a></li>
+      <li><a href="#">Facundo Erpen</a></li>
+      <li><a href="#">Flavio Santos</a></li>
+      <li><a href="#">Freddy Pajoy</a></li>
+      <li><a href="#">Gabriel Rey</a></li>
+      <li><a href="#">Gerardo Espinoza</a></li>
+      <li><a href="#">Hercules Gomez</a></li>
+      <li><a href="#">Juan de la Barrera</a></li>
+      <li><a href="#">Luis Esqueda</a></li>
+      <li><a href="#">Luis Noriega</a></li>
+      <li><a href="#">Luis Robles</a></li>
+      <li><a href="#">Matias Alustiza</a></li>
+      <li><a href="#">Mauricio Romero</a></li>
+      <li><a href="#">Michael Orozco</a></li>
+       <li><a href="#">Oscar Rojas</a></li>
+      <li><a href="#">Pablo Gonzalez</a></li>
+       <li><a href="#">Paco Torres</a></li>
+        <li><a href="#">Sergio Perez</a></li>
+      <li><a href="#">Wilberto Cosme</a></li> 
+    </ul>
+  </div>
+</div> 
 
 
 
