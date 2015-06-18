@@ -6,8 +6,13 @@
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-
-
+<script>
+$(document).on("pagecreate","#page8",function(){
+  $("p").on("swipe",function(){
+    $("span").text("PALACIO DE HIERRO Blvd. del Nino Poblano No. 2510 Col. Concepcion de la Cruz.Puebla, Puebla Lunes a Domingo: 11:00 am a 21:00 hrs. El Punto de Venta NO entrega ordenes WILLCALL/OXXO/ELEKTRA------------MISTERTENNIS Centro 2pte #114 Col. Centro.Puebla, Puebla. Horario de 10:00 am a 8:00 pm de Lunes a Domingo-------------MISTERTENNIS DORADA Boulevard 5 de mayo 3510 local 28 Int Plaza Dorada.Ladrillera de Benitez, Puebla. Horario de 11:00 am a 8:00 pm de Lunes a Domingo.");
+  });                       
+});
+</script>
 
 <style type="text/css">
 #page2 div p {
@@ -57,6 +62,7 @@
 }
 #page4 div h1 {
 	color: #0080FF;
+	font-size: 16px;
 }
 #page4 div h4 {
 	font-size: 12px;
@@ -137,15 +143,26 @@
 .color {
 	color: #F00;
 }
+#page9 div h1 {
+	color: #0080FF;
+}
+#page8 div h1 {
+	color: #0080FF;
+}
+#page10 div h1 {
+	color: #0080FF;
+	font-size: .5;
+	font-family: sans-serif;
+}
+#page10 .ui-content p {
+	color: #0080FF;
+}
+#page10 #myPanel p {
+	color: #0080FF;
+}
 </style>
 
-<script>
-$(document).on("pagecreate","#page8",function(){
-  $("p").on("swipe",function(){
-    $("span").text("PALACIO DE HIERRO Blvd. del Niño Poblan No. 2510 Col. Concepción de la Cruz.Puebla, Puebla Lunes a Domingo: 11:00 am a 21:00 hrs. El Punto de Venta NO entrega ordenes WILLCALL/OXXO/ELEKTRA------------MISTERTENNIS Centro 2pte #114 Col. Centro.Puebla, Puebla. Horario de 10:00 am a 8:00 pm de Lunes a Domingo-------------MISTERTENNIS DORADA Boulevard 5 de mayo 3510 local 28 Int Plaza Dorada.Ladrillera de Benitez, Puebla. Horario de 11:00 am a 8:00 pm de Lunes a Domingo.");
-  });                       
-});
-</script>
+
 
 </head> 
 <body> 
@@ -161,8 +178,10 @@ $(document).on("pagecreate","#page8",function(){
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#page2" data-transition="fade">HISTORIA</a></li>
             <li><a href="#page3" data-transition="flip">ESCUDO</a></li>
+             <li><a href="#page10" data-transition="slide">HIMNO</a></li>
 			<li><a href="#page4" data-transition="pop">ESTADIO</a></li>
           <li><a href="#page8" data-transition="slide">VENTA BOLETOS</a></li>
+          <li><a href="#page9" data-transition="fade">TABLA GENERAL</a></li>
             <li><a href="#page5" data-transition="slide">PLANTILLA</a></li>
             <li><a href="#AYUDA" data-transition="slidedown">AYUDA</a></li>
 		</ul>		
@@ -603,6 +622,7 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
 
 
 
+
 <div data-role="page" id="page8">
   <div data-role="header">
     <h1>Puntos de Venta</h1>
@@ -620,6 +640,133 @@ CP 72220 Heroica Puebla de Zaragoza, Puebla, México</P>
     <h1>Puebla FC</h1>
   </div>
 </div> 
+
+
+
+
+
+
+
+
+<div data-role="page" id="page9">
+  <div data-role="header">
+    <h1>TABLA GENERAL</h1>
+    <a data-direction"reverse" data-rel="back">Atras </a>
+    <a href="#page" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">inicio</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Abrir un dialogo</a>
+  
+
+    <div data-role="popup" id="myPopupDialog">
+      <div data-role="header">
+        <h1>TABLA GENERAL</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h2>Tabla General</h2>
+        <p>Clausura 2015</p>
+        <img src="../futbol/tabla.png" width="426" height="649"> 
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Regresar</a>
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <h1>Puebla FC</h1>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h1>Puebla FC</h1>
+  </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="page10">
+  <div data-role="panel" id="myPanel"> 
+    <h1>HIMNO PUEBLA FC</h1>
+    
+    <p class="HIMNO"> </p>
+    <P>Soy de una tierra de temple y valor 
+con un cielo limpio su aire mejor 
+a donde los angeles tienen su hogar 
+una tierra heroica que hoy quiere cantar </P>
+
+<P>Yo soy poblano y es grande mi honor 
+llevar en mi pecho una franja un color 
+sentir en el alma una tradición 
+y desde el Cuauhtémoc se escucha el clamor </P>
+
+<P>Soy poblano, soy poblano 
+llevo a Mexico y Puebla en el corazon 
+grito en la porra a todo pulmón 
+que el Puebla va a ser campeon</P>
+
+
+<P>Soy de un lugar elegido por Dios 
+con sus campanarios, su gente, su amor 
+vendran nuevos tiempos a nuestro futbol 
+y en todo el estado se escucha el clamor </P>
+
+<P>1,2,3... 
+Soy poblano, soy poblano 
+llevo a Mexico y Puebla en el corazon 
+grito en la porra a todo pulmon 
+que el Puebla va a ser campeon</P>
+
+<P>Soy poblano, soy poblano 
+llevo a Mexico y Puebla en el corazon 
+grito en la porra a todo pulmon 
+que el Puebla va a ser campeon</P>
+
+<P>Vamos todos gritando, saltando 
+que aqui yo vengo y lo detengo 
+everybody is saying: 
+Puebla, ¡Puebla será campeon!
+Puebla, ¡Puebla es el mejor!
+alza la mano que vamos agarrando 
+mira que tengo un equipo campeon 
+llevo al Puebla en el corazon 
+Chikichikicha,chikichikicha 
+vamos todos juntos pues vamos a ganar </P>
+
+<P>Soy poblano, soy poblano 
+llevo a Mexico y Puebla en el corazon 
+grito en la porra a todo pulmon 
+que el Puebla va a ser campeon</P>
+
+<P>Soy poblano, soy poblano 
+llevo a Mexico y Puebla en el corazon 
+grito en la porra a todo pulmón 
+que el Puebla, que el Puebla, 
+que el Puebla va a ser campeon.</p>
+  </div> 
+
+  <div data-role="header">
+    <h1>HIMNO PUEBLA FC</h1>
+    <a data-direction"reverse" data-rel="back">Atras </a>
+    <a href="#page" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">inicio</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click en abrir panel para mostrar himno del Puebla FC</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Panel</a>
+    <a href="#page_" data-rel="close" class="ui-btn"> cerrar </a>
+  </div>
+
+</div> 
+
+
 
 
 
